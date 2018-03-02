@@ -1,0 +1,30 @@
+{
+  "name": "critical-css-with-webpack",
+  "version": "1.0.0",
+  "description": "This is an example of how you can split your css into critical and lazy loaded css with webpack.",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "rimraf dist && webpack --progress --profile --bail",
+    "start": "webpack-dev-server --progress --profile --bail"
+  },
+  "keywords": [
+    "webpack",
+    "css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukas-reineke/critical-css-with-webpack"
+  },
+  "author": "Lukas Reineke <lukas.reineke@protonmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.10",
+    "extract-text-webpack-plugin": "next",
+    "html-webpack-plugin": "^3.0.4",
+    "rimraf": "^2.6.2",
+    "style-ext-html-webpack-plugin": "git+https://github.com/lukas-reineke/style-ext-html-webpack-plugin.git",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.0"
+  }
+}
